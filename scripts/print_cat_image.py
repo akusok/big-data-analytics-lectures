@@ -25,7 +25,7 @@ def get_random_cat_image(api_key):
         # Resize the image
         width, height = img.size
         aspect_ratio = height/width
-        new_width = 20
+        new_width = 120
         new_height = aspect_ratio * new_width * 0.55
         img = img.resize((new_width, int(new_height)))
 
