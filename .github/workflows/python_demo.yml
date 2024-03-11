@@ -7,7 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+        CATKEY: ${{ secrets.CAT_AS_A_SERVICE_API_KEY }}
+        
     steps:
     # this will move us to the correct folder with a copy of the repo code
     - uses: actions/checkout@v2

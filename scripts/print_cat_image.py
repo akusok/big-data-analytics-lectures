@@ -2,8 +2,9 @@ import requests
 from PIL import Image
 import numpy as np
 from io import BytesIO
+import os
 
-CATKEY = "YOUR_API"
+CATKEY = os.environ['CATKEY']
 
 def get_random_cat_image(api_key):
     url = "https://api.thecatapi.com/v1/images/search"
