@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
         CATKEY: ${{ secrets.CAT_AS_A_SERVICE_API_KEY }}
-        
+
     steps:
     # this will move us to the correct folder with a copy of the repo code
     - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pin install requests pillow numpy
+        pip install requests pillow numpy
 
     - name: Run Python script
       run: python scripts/print_cat_image.py
