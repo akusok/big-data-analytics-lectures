@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # this will move us to the correct folder with a copy of the repo code
     - uses: actions/checkout@v2
 
     - name: Set up Python
@@ -22,6 +23,4 @@ jobs:
         pip install requests tensorflow keras pillow
 
     - name: Run Python script
-      run: |
-        echo "print('Hello from Python')" > script.py
-        python script.py
+      run: python scripts/helloworld.py
