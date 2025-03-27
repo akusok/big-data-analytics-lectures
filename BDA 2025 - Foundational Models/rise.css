@@ -1,0 +1,52 @@
+<!-- Not content, but for better presentation styles -->
+<style>
+.rise-enabled .rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td table.dataframe {
+     font-size: 100%;
+}
+    
+.rendered_html code {
+    background: #EFEFEF;
+    border: 1px solid #CCC;
+    padding: 1px 5px;
+    border-radius: 1px;
+}
+.rise-enabled .fa-times-circle:before,
+.rise-enabled .fa-question:before,
+.rise-enabled aside.controls {
+    opacity: 0.12;
+}
+.rise-enabled a,
+.rise-enabled a:active,
+.rise-enabled a:hover,
+.rise-enabled a:visited,
+.rise-enabled :link {
+    text-decoration: none;
+    color: #A68910;
+}
+
+.headertekst {
+  text-align: center;
+}
+
+
+.toright {
+    position: relative;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    bottom: 2000px
+}
+
+.pos_vert {
+    position: relative;
+    bottom: 2000px;
+}
+
+}
+
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
+
+</style>
